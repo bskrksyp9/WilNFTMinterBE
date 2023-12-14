@@ -3,7 +3,7 @@ var app = express()
 var cors = require('cors')
 
 const { ethers } = require("ethers");
-const rpcURL = 'https://sepolia.infura.io/v3/c5dc37ddafa94d0d91a67e377765d07d'; // Paste the Ganache RPC Url here, e.g. http://localhost:7545
+const rpcURL = 'https://goerli.infura.io/v3/56b366d1d81d40b59886c1c7edeacee0'; // Paste the Ganache RPC Url here, e.g. http://localhost:7545
 const provider = new ethers.providers.JsonRpcProvider(rpcURL);
 app.use(express.json(),cors())
 
